@@ -1,0 +1,38 @@
+.container {
+  width: 170vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+.blog-input-container form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200%;
+  max-width: 600px;
+}
+
+#blog label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+#blog input,
+#blog textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#blog textarea {
+  resize: none; /* Allow vertical resizing of the textarea */
+  min-height: 150px; /* Set a minimum height */
+}

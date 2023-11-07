@@ -1,0 +1,86 @@
+/* Resetting some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 12%;
+  background-color: #f1f1f1;
+  position: fixed; /* Change from absolute to fixed */
+  height: 100%;
+  overflow: auto;
+  font-family: monospace;
+}
+
+/* Adjusting the styles for the content */
+.fatherNav {
+  display: flex;
+  margin-top: 60%;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Rest of your existing styles */
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 1s;
+}
+
+li a.active {
+  background-color: #000;
+  color: black;
+}
+
+li a:hover:not(.active) {
+  color: black;
+}
+
+h1 {
+  font-size: 17px;
+  color: white;
+  padding: 8px 16px;
+  background-color: #36454f;
+  margin: 0;
+}
+
+/* hover animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #4169E1;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4169E1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.night {
+  height: fit-content;
+  width: 50%;
+  height: 2rem;
+  background-color: #f1f1f1;
+  padding: 0;
+  background-image: url(/frontend/public/);
+}

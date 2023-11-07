@@ -1,0 +1,12 @@
+/* footer.css */
+.footer-container {
+    background-color:  #36454f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    font-family:monospace;
+    bottom: 0;
+    width: 100%;
+  }
+  
